@@ -1,0 +1,14 @@
+import matplotlib.pyplot as plt
+from matplotlib import style
+style.use('ggplot')
+overs=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+runs_scored_IND=[0,7,12,20,30,50,61,83,86,91,113,116,123,137,145,163,172,195,198,198,203]
+runs_scored_AUS=[0,7,12,20,30,50,61,83,86,91,113,116,123,137,145,163,172,195,198,198,203]
+plt.plot(overs,runs_scored_IND,marker='X',linestyle='dashed',color='red',linewidth=2,markerfacecolor='blue',markersize=8,label="IND")
+plt.plot(overs,runs_scored_AUS,marker='X',linestyle='dashed',color='red',linewidth=2,markerfacecolor='blue',markersize=8,label="AUS")
+plt.xlabel('overs',fontsize=12,color='blue',backgroundcolor='lightgreay')
+plt.ylabel('Runs scored ',fontsize=12,colkor='blue',backgroundcolor='lightgreay')
+plt.title('Run scoring in an t20 cricket match ',fontsize=12,color='blue',backgroundcolor='yellow')
+plt.grid(True)
+plt.legend(loc=2)
+plt.show()

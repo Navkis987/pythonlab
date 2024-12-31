@@ -1,0 +1,16 @@
+import matplotlib.pyplot as plt
+
+countries = ['Brazil', 'Germany', 'Italy', 'Argentina', 'Uruguay', 'France', 'England', 'Spain']
+wins = [5, 4, 4, 3, 2, 2, 1, 1]
+colors = ['yellow', 'magenta', 'green', 'blue', 'lightblue', 'blue', 'red', 'cyan']
+ex = [0.0, 0.0, 0.0, 0.0, 0.2, 0.2, 0.2, 0.2]
+
+plt.pie(
+    wins, labels=countries, autopct='%1.1f%%', explode=ex, colors=colors,
+    shadow=True, radius=1.3, labeldistance=1.1, startangle=90,
+    textprops={'fontsize': 10}, counterclock=False,
+    wedgeprops={'linewidth': 3, 'edgecolor': 'r'}, rotatelabels=True
+)
+plt.legend(loc=1)
+plt.axis('equal')
+plt.show()

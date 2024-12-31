@@ -1,0 +1,11 @@
+from bokeh.plotting import figure,show
+import numpy as np
+x=np.arange(0,5,10)
+y1=np.sin(x)
+y2=np.cos(x)
+y3=np.tan(x)
+p=figure(title="simple line graph",x_axis_label="x",y_axis_label="y")
+p.line(x,y1,legend_lable="sine function",line_width=2,color="red")
+p.line(x,y2,legend_label="cos function",line_width=2,color="blue")
+p.line(x,y3,legend_label="tan function",line_width=2,color="green")
+show(p)

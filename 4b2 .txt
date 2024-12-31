@@ -1,0 +1,19 @@
+import matplotlib.pyplot as plt
+
+countries = ['Brazil', 'Russia', 'India', 'China', 'South Africa', 'USA', 'AUS']
+temp = [20, 40, 55, 39, 55, 55, 60]
+
+# Colors, sizes, and scatter plot
+color = ["r", "g", "b", "c", "m", "y", "r"]
+size = [1500, 600, 700, 400, 700, 500, 560]
+
+plt.scatter(countries, temp, c=color, s=size, marker='o', edgecolors='g', linewidth=2, alpha=0.6)
+
+# Labels and title
+plt.ylabel('Temperature', fontsize=12, color="red")
+plt.xlabel('Countries', fontsize=12, color="red")  # Corrected fontsize argument
+plt.title('Scatter Plot', fontsize=14, color="b", backgroundcolor="y")
+
+# Show the plot
+plt.show()
+

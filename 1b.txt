@@ -1,0 +1,8 @@
+num=input("Enter the number:")
+if num==num[ : :-1]:
+    print("palindrome")
+else:
+    print("Not Palindrome")
+for i in range (10):
+    if num.count(str(i)):
+        print(i,'appers',num.count(str(i)),"times")

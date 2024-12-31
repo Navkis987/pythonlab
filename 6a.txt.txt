@@ -1,0 +1,9 @@
+import matplotlib.pyplot as plt
+overs = [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+runs_scored=[0,7,12,20,30,50,61,83,86,91,113,116,123,137,145,163,172,195,198,198,203]
+plt.plot(overs,runs_scored)
+plt.xlabel('overs',fontsize=12,color='blue',backgroundcolor='lightgrey')
+plt.ylabel('Runs scored ',fontsize=12,color = 'blue',backgroundcolor='lightgrey')
+plt.title('Run scoring in an t20 cricket match ',fontsize=12,color='blue',backgroundcolor='yellow')
+plt.grid(True)
+plt.show()

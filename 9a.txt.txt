@@ -1,0 +1,5 @@
+import plotly.express as px
+df=px.data.iris()
+df.head(10)
+fig =px.scatter_3d(df,x="sepal_width",y="sepal_length",z="petal_wid)h",color='species',symbols='species',opacity=0.8)
+fig.show()

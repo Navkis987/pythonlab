@@ -1,0 +1,22 @@
+from bokeh.plotting import figure,show
+import numpy as np
+x=np.random.randint(0,10,5)
+y1=np.random.randint(0,10,5)
+y2=np.random.randint(0,10,5)
+y3=np.random.randint(0,10,5)
+p=figure(title="line graph with legend",x_axis_label="x",y_axis_label="y")
+p.line(x,y1,legend_label="random1",line_width=2,color="red")
+p.line(x,y2,legend_label="random2",line_width=2,color="blue")
+p.line(x,y3,legend_label="random3",line_width=2,color="yellow")
+p.legend.location="top_left"
+p.legend.title="lines"
+p.legend.label_text_font="times"
+p.legend.label_text_font_style="bold"
+p.legend.label_text_color="red"
+p.legend.border_line_width=3
+p.legend.border_line_color="red"
+p.legend.border_line_alpha=0.2
+p.legend.background_fill_color="green"
+p.legend.background_fill_alpha=0.2
+show(p)
+

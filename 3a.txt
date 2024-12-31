@@ -1,0 +1,18 @@
+sen=input("Enter a sentence")
+words=sen.split(" ")
+wc=len(words)
+dcount,ucount,lcount,scount=0,0,0,0
+for ch in sen:
+    if ch>='0' and ch<='9':
+        dcount=dcount+1
+    elif ch>='A' and ch<='Z':
+        ucount=ucount+1
+    elif ch>='a' and ch<='z':
+        lcount=lcount+1
+    else:
+        scount=scount+1
+print("Number of words in sentence:",wc)
+print("Number of digit in sentence:",dcount)
+print("Number of upper case letter in sentence:",ucount)
+print("Number of lower case letter in sentence:",lcount)
+print("Number of symbols in sentence:",scount)

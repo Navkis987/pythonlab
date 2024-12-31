@@ -1,0 +1,7 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+
+tips_df = sns.load_dataset("tips")
+sns.lineplot(
+    x="total_bill",y="tip",data=tips_df, hue="sex",style="sex", marker="^")
+plt.show()

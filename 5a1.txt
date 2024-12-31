@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+import numpy as np
+s=np.random.randint(15,45,100)
+plt.hist(s,bins=10,edgecolor='k')
+plt.xlabel("Student Scores",color='m',fontsize=15)
+plt.ylabel("Frequency",color='m',fontsize=15)
+plt.title('Distribution of Student Scores',color='r',fontsize=20)
+plt.show()

@@ -1,0 +1,6 @@
+import plotly.express as px
+import pandas as pd
+data=("country":["india","china","Japan","south korea"],"values":[10,20,30,40]}
+df=pd.DataFrame(data)
+fig=px.choropleth(df,locations="country",locationmode="country names",color="values",scope="Asia",title="choropleth map of asia",color_continuous_scale='viridis',hover_name='country')
+fig.show()

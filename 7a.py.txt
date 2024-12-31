@@ -1,0 +1,10 @@
+import seaborn as sns
+import matplotlib.pyplot as plt
+import pandas as pd
+sns.set_style("darkgrid")
+days=[1,2,3,4,5,6,7]
+temp=[22,33,44,21,11,1,12]
+temp_df=pd.DataFrame({"days":days,"temp":temp})
+temp_df
+sns.lineplot(x="days",y="temp",data=temp_df).set_title('line plot',fontdict={'fontsize':24})
+plt.show()

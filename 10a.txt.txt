@@ -1,0 +1,5 @@
+import plotly.express as px
+df = px.data.stocks()
+fig = px.line(df,x="date",y=["GOOG", "NFLX"],color_discrete_sequence=["cyan", "red"]  )
+fig.update_layout(title="Time Series Plot",xaxis_title="Date",yaxis_title="Stock Value",legend_title="Company")
+fig.show()

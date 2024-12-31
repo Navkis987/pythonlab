@@ -1,0 +1,13 @@
+import matplotlib.pyplot as plt
+countries = ['Brazil', 'Germany', 'Italy', 'Argentina', 'Uruguay', 'France', 'England', 'Spain']
+wins = [5, 4, 4, 3, 2, 2, 1, 1]
+
+# Fixing invalid parameter 'rotatelabels'
+plt.pie(wins, labels=countries, radius=1.9, colors=["r", "g", "m", "y", "b", "c", "b", "y"], labeldistance=0.7, startangle=90)
+plt.pie([1], colors="w")  # This creates a blank space to close the chart
+plt.show()
+
+# Second pie chart (separate, works as expected)
+plt.pie([1])
+plt.show()
+

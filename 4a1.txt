@@ -1,0 +1,8 @@
+import matplotlib.pyplot as plt
+x=['c','c++','java','python']
+y=[85,78,92,88]
+plt.bar(x,y)
+plt.xlabel("Subject")
+plt.ylabel("Average Marks")
+plt.title("Average scores of students in different subjects")
+plt.show()

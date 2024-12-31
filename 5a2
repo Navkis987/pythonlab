@@ -1,0 +1,33 @@
+import matplotlib.pyplot as plt
+import numpy as np
+import random
+
+# Generate random student scores
+student_scores = np.random.randint(15, 55, (100))
+
+# Define the bins for the histogram
+bins = [10, 20, 30, 40, 50, 60]
+
+# Create the histogram
+plt.hist(
+    student_scores,
+    bins=bins,
+    color="b",
+    edgecolor="r",
+    rwidth=1,
+    bottom=20,
+    histtype="bar",
+    orientation="vertical",
+    cumulative=False
+)
+
+# Add labels and title
+plt.xlabel('Student Scores', color="m", fontsize=15)
+plt.ylabel('Frequency', color="m", fontsize=15)
+plt.title('Distribution of Student Scores', color="r", fontsize=20)
+
+# Add a vertical line at x=35
+plt.axvline(35, color="y")
+
+# Show the plot
+plt.show()

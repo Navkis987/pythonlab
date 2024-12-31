@@ -1,0 +1,5 @@
+import plotly.express as px
+df = px.data.gapminder().qery("continent=='Asia'")
+#df.head(10)
+fig=px.line_3d(df,x="gdppercap",y="pop",z="year",color='country')
+fig.show()

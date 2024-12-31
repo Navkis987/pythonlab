@@ -1,0 +1,17 @@
+import matplotlib.pyplot as plt
+
+# Data
+countries = ['Brazil', 'Russia', 'India', 'China', 'South Africa', 'USA', 'AUS']
+temp = [20, 40, 55, 39, 66, 55, 65]
+
+# Scatter plot
+plt.scatter(countries, temp)
+
+# Labels and title
+plt.xlabel('Countries', fontsize=12, color="red")
+plt.ylabel('Temperature', fontsize=12, color="red")
+plt.title('Scatter Plot', fontsize=14, color="blue")
+
+# Show plot
+plt.show()
+
